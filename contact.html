@@ -1,0 +1,252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<title>NKG: Contact</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+
+<script type="text/javascript">
+
+// <![CDATA[
+
+jQuery(document).ready(function(){
+
+	$('#contactform').submit(function(){				  
+
+		var action = $(this).attr('action');
+
+		$.post(action, { 
+
+			name: $('#name').val(),
+
+			email: $('#email').val(),
+
+			company: $('#company').val(),
+
+			subject: $('#subject').val(),
+
+			message: $('#message').val()
+
+		},
+
+			function(data){
+
+				$('#contactform #submit').attr('disabled','');
+
+				$('.response').remove();
+
+				$('#contactform').before('<p class="response">'+data+'</p>');
+
+				$('.response').slideDown();
+
+				if(data=='Message sent!') $('#contactform').slideUp();
+
+			}
+
+		); 
+
+		return false;
+
+	});
+
+});
+
+// ]]>
+
+</script>
+
+</head>
+
+<body>
+
+<div class="main">
+
+  <div class="main_resize">
+
+    <div class="main_left">
+
+      <div class="logo"><a href="index.html"><img src="images/logo_shadownew.png" width="175" height="157" border="0" alt="logo" /></a></div>
+
+      <div class="clr"></div>
+
+      <div class="menu">
+
+        <ul>
+
+          <li><a href="index.html"><span>Home</span></a></li>
+
+          <li><a href="about.html"><span>About</span></a></li>
+
+          <li><a href="exhibitions.html"><span>Exhibitions</span></a></li>
+
+          <li><a href="ResultsNationalJuried2012.html"><span> National Juried</span></a></li>
+
+          <li><a href="art.html"><span> Art Discourse</span></a></li>
+
+          <li><a href="directions.html"><span>Directions</span></a></li>
+
+          <li><a href="contact.html" class="active"><span> Contact</span></a></li>
+
+        </ul>
+
+      </div>
+
+      <div class="clr"></div><br />
+
+      <img src="images/natacha/infection.png" width="173" height="223" alt="NKG Boston MA" /><br />
+
+    
+
+      <p><strong>Address:</strong><br />
+      450 Harrison Avenue #61<br /><br /><strong>Phone:</strong></p>
+      <p>(857) 239 9254 or <br />
+        
+        (603) 321 0632<br /><br /><strong>Email:</strong><br />
+        nkgboston@gmail.com<br />
+        
+        <br />
+        
+      </p>
+
+
+
+        <a href="http://www.facebook.com/pages/Boston-MA/NK-Gallery/108423572518444" target="_blank"><img src="images/facebook.png" alt="picture" border="0" class="floated" /></a>
+
+      <p><strong>Visit us on <br />
+
+      Facebook</strong></p>
+
+    </div>
+
+    <div class="main_right">
+
+      <div class="search">        
+
+               
+
+      </div>
+
+      <div class="clr"></div>
+
+      <div id="slider2">
+
+        <div class="controls-center">
+
+        <h3>Contact</h3>
+
+                <div class="clr"></div>
+
+        </div>
+
+        <div class="clr"></div>
+
+      </div>
+
+      <div class="clr"></div>
+
+      <br />
+
+        <h2>Contact NKGallery</h2>
+
+        <p>NKG 450 Harrison Avenue #61, Boston MA 02118. Tel.(857) 239-9254</p>
+
+<p class="grey">Thank you for your interest in our gallery.  We are not currently accepting unsolicited artist submissions. </p>
+
+      <p class="grey">We are located in the SOWA district in Boston.  Please <a href="directions.html">see here</a> for detailed directions.</p>
+
+<form action="contact.php" method="post" id="contactform">
+
+          <ol>
+
+            <li>
+
+              <label for="name">Name <span class="red">*</span></label>
+
+              <input id="name" name="name" class="text" />
+
+            </li>
+
+            <li>
+
+              <label for="email">Your email <span class="red">*</span></label>
+
+              <input id="email" name="email" class="text" />
+
+            </li>
+
+            <li>
+
+              <label for="company">Company</label>
+
+              <input id="company" name="company" class="text" />
+
+            </li>
+
+            <li>
+
+              <label for="subject">Subject</label>
+
+              <input id="subject" name="subject" class="text" />
+
+            </li>
+
+            <li>
+
+              <label for="message">Message <span class="red">*</span></label>
+
+              <textarea id="message" name="message" rows="6" cols="50"></textarea>
+
+            </li>
+
+            <li class="buttons">
+
+              <input type="image" name="imageField" id="imageField" src="images/send.gif" />
+
+            </li>
+
+          </ol>
+
+      </form>
+
+        <div class="clr"></div>
+
+        <h2></h2>
+
+        <p></p>
+
+    </div>
+
+    <div class="clr"></div>
+
+  </div>
+
+  <div class="footer">
+
+  <p class="grey"><strong>NKG 450 Harrison Avenue, Boston, MA 02118</strong><br />
+  <strong>Gallery Hours:</strong> Wednesday - Saturday 11AM - 4 PM<br />Sunday - Tuesday by appointment<br />
+
+<strong>First Fridays of each month:</strong> 2 - 8 P.M</p>
+
+    <div class="footer_resize">
+
+      <p>©2010 NKGallery. All Rights Reserved.<br /></p>
+
+      <div class="clr"></div>
+
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+
+</html>
+

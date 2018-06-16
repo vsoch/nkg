@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<title>NKG: Directions</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+
+
+
+  <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=true&amp;key=ABQIAAAA0fieGzD3mN-jLpQk4BzVpBSC0bc7abDBkQ1TjjdTTuaeHiqtaxQlgYn1O4F4fwhtwT92xmqdTOwnWg" type="text/javascript"></script>
+
+
+
+<script src="http://maps.google.com/maps/api/js?sensor=true" type="text/javascript"></script>
+
+
+
+<script type="text/xml">
+
+<!--
+
+<oa:widgets>
+
+  <oa:widget wid="2187524" binding="#mapCanvas" />
+
+</oa:widgets>
+
+-->
+
+</script>
+
+</head>
+
+<body>
+
+<div class="main">
+
+  <div class="main_resize">
+
+    <div class="main_left">
+
+      <div class="logo"><a href="index.html"><img src="images/logo_shadownew.png" width="175" height="157" border="0" alt="logo" /></a></div>
+
+      <div class="clr"></div>
+
+      <div class="menu">
+
+        <ul>
+
+          <li><a href="index.html"><span>Home</span></a></li>
+
+          <li><a href="about.html"><span>About</span></a></li>
+
+          <li><a href="exhibitions.html"><span>Exhibitions</span></a></li>
+
+          <li><a href="ResultsNationalJuried2012.html"><span> National Juried</span></a></li>
+
+          <li><a href="art.html"><span> Art Discourse</span></a></li>
+
+          <li><a href="contact.html" class="active"><span> Contact</span></a></li>
+
+        </ul>
+
+      </div>
+
+      <div class="clr"></div>
+
+      
+
+          
+
+     <p><img src="images/natacha/natacha1972.png" width="173" height="223" alt="NKG Boston MA" /></p>
+
+    </div>
+
+    <div class="main_right">
+
+      <div class="search">        
+
+               
+
+      </div>
+
+      <div class="clr"></div>
+
+      <div id="slider2">
+
+        <div class="controls-center">
+
+        <h3>Directions</h3>
+        <h2><strong>450 Harrison Avenue #61 Boston, MA 02118</strong></h2>
+
+                <div class="clr"></div>
+
+        </div>
+
+        <div class="clr"></div>
+
+      </div>
+
+      <div class="clr"></div>
+
+      <div id="mapCanvas" style="width:720px; height:300px"></div>
+
+      <script type="text/javascript">
+
+// BeginOAWidget_Instance_2187524: #mapCanvas
+
+
+
+	  // initialize the google Maps 	
+
+	
+
+     function initializeGoogleMap() {
+
+		// set latitude and longitude to center the map around
+
+		var latlng = new google.maps.LatLng(42.34386, 
+
+											-71.06478);
+
+		
+
+		// set up the default options
+
+		var myOptions = {
+
+		  zoom: 16,
+
+		  center: latlng,
+
+		  navigationControl: true,
+
+		  navigationControlOptions: 
+
+		  	{style: google.maps.NavigationControlStyle.DEFAULT,
+
+			 position: google.maps.ControlPosition.TOP_LEFT },
+
+		  mapTypeControl: true,
+
+		  mapTypeControlOptions: 
+
+		  	{style: google.maps.MapTypeControlStyle.DEFAULT,
+
+			 position: google.maps.ControlPosition.TOP_RIGHT },
+
+
+
+		  scaleControl: true,
+
+		   scaleControlOptions: {
+
+        		position: google.maps.ControlPosition.BOTTOM_LEFT
+
+    	  }, 
+
+		  mapTypeId: google.maps.MapTypeId.ROADMAP,
+
+		  draggable: true,
+
+		  disableDoubleClickZoom: false,
+
+		  keyboardShortcuts: true
+
+		};
+
+		var map = new google.maps.Map(document.getElementById("mapCanvas"), myOptions);
+
+		if (false) {
+
+			var trafficLayer = new google.maps.TrafficLayer();
+
+			trafficLayer.setMap(map);
+
+		}
+
+		if (false) {
+
+			var bikeLayer = new google.maps.BicyclingLayer();
+
+			bikeLayer.setMap(map);
+
+		}
+
+		if (true) {
+
+			addMarker(map,42.3428,-71.06485,"NKGallery");
+
+		}
+
+	  }
+
+
+
+	  window.onload = initializeGoogleMap();
+
+
+
+	 // Add a marker to the map at specified latitude and longitude with tooltip
+
+	 function addMarker(map,lat,long,titleText) {
+
+	  	var markerLatlng = new google.maps.LatLng(lat,long);
+
+	 	var marker = new google.maps.Marker({
+
+      		position: markerLatlng, 
+
+      		map: map, 
+
+      		title:"NKGallery",
+
+			icon: ""});   
+
+	 }
+
+
+
+	
+
+// EndOAWidget_Instance_2187524
+
+      </script>
+
+      <p class="grey"><strong>North of Boston</strong><br />
+
+Take I-93 through the BIG DIG Tunnel to the Mass Pike/Albany Street Exit. TAKE THE ALBANY STREET EXIT 20-B. Stay in left lane and go to Albany Street (do NOT get on the Mass Pike!!) Go straight on Albany Street through two traffic lights and turn right at E. Berkeley Street (there is a Mobil Gas Station on the corner). Proceed one block to Harrison Avenue and turn left. There is parking at 500 Harrison Avenue lot adjacent to 460 Harrison Avenue building.
+
+<br /><br />
+
+<strong>South of Boston</strong>
+
+Take I-93 to the Mass Ave/Roxbury Exit (Exit 18). Follow the off ramp to 5th traffic light (sign at corner say "South End/Back Bay") and turn left onto E. Berkeley Street. Proceed one block to Harrison Avenue and turn left.
+
+<br /><br />
+
+<strong>West of Boston</strong>
+
+Follow the Mass Pike to the Copley Square exit. As you exit the tunnel, bear right. You are on Dartmouth Street heading toward the South End. Stay on Dartmouth, cross Tremont St and continue on West Dedham Street until you come to Harrison Avenue. Turn left onto Harrison Avenue.
+
+<br /><br />
+
+<strong>Using the MBTA</strong>
+
+Take the orange line to the New England Medical Center T stop. Change and take the SILVER LINE bus to the East Berkeley Street Stop or the Union Park Street Stop.
+
+<br /><br />
+
+<strong>Or if you prefer to walk: </strong>At the NEMC T Stop, use the exit pointing towards Washington Street. Take a right on Washington Street and walk for three blocks. Take a left onto East Berkeley Street. At the end of the block, take a right onto Harrison Avenue. Start looking at art!</p>
+
+      
+
+<div class="clr"></div>
+
+        <h2>&nbsp;</h2>
+
+        <p>&nbsp;</p>
+
+    </div>
+
+    <div class="clr"></div>
+
+  </div>
+
+<div class="footer">
+
+  <p class="grey"><strong>NKG 450 Harrison Avenue, Boston, MA 02118</strong><br />
+  <strong>Gallery Hours:</strong> Wednesday - Saturday 11AM - 4 P.M<br />Sunday - Tuesday by appointment<br />
+
+<strong>First Fridays of each month:</strong> 2 - 8 P.M</p>
+
+    <div class="footer_resize">
+
+      <p>©2010 NKGallery. All Rights Reserved.<br /></p>
+
+      <div class="clr"></div>
+
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+
+</html>
+
